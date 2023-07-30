@@ -4,7 +4,7 @@ const app = express();
 let port = 5000;
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://giovanna:1234@cluster0.qwjfzyf.mongodb.net/?retryWrites=true&w=majority');
+mongoose.connect('urlConect');
 
 mongoose.connection.on('connected', function () {
   console.log('Connected to Database ');
